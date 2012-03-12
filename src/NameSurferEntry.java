@@ -72,13 +72,17 @@ public class NameSurferEntry implements NameSurferConstants {
 
     public String toString() {
         
-        String numArray = "";
+        String entry = personName + " [";
 
         for ( int i=0; i < popularityRanks.length; i++) {
-            numArray = numArray  + popularityRanks[i] + " ";  // Concatenate the rank values into a variable
+            // Concatenate the rank values into a variable
+            entry +=  popularityRanks[i];
+
+            // Add a trailer space to the string
+            entry += (i < popularityRanks.length - 1)? " ": "";
         }
 
-        return personName + " [" + numArray + "]";
+        return (entry += "]");
     }
 }
 
