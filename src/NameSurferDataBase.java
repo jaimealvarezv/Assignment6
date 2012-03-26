@@ -10,12 +10,14 @@
  */
 import java.io.*;
 import java.util.ArrayList;
+import java.util.HashMap;
 
 import acm.util.*;
 
 public class NameSurferDataBase implements NameSurferConstants {
 
-    private ArrayList<String> dataFile;
+
+    private HashMap<String, NameSurferEntry> ranksMap = new HashMap<String, NameSurferEntry>();
 
 
 
@@ -32,7 +34,7 @@ public class NameSurferDataBase implements NameSurferConstants {
 
  /**  Method: readFile(name) */
  /*
- * Reads the data from file and store it into a variable
+ * Reads the data from file and store it into a HashMap
   */
     private void readFile(String filename) {
         try {
@@ -42,7 +44,11 @@ public class NameSurferDataBase implements NameSurferConstants {
             String line = surferDataBaseFile.readLine();
 
             while (line != null) {
-                dataFile.add(line);
+                // Puts the line and ranks into hashmap
+                NameSurferEntry ns = new NameSurferEntry(line);
+                ranksMap.put(ns.getName(), ns);
+
+                // Reads the next line from the file
                 line = surferDataBaseFile.readLine();
             }
             surferDataBaseFile.close();
@@ -60,8 +66,27 @@ public class NameSurferDataBase implements NameSurferConstants {
  * method returns null.
  */
 	public NameSurferEntry findEntry(String name) {
-		// You need to turn this stub into a real implementation //
-		return null;
+
+        // Capitalize the first char of the name to find it into the hash Map
+
+        char[] stringArray = name.toCharArray();
+        stringArray[0] = Character.toUpperCase(stringArray[0]);
+
+        // Variable i must start in 1, remember that the position 0 is in Uppercase
+        for (int i = 1; i < stringArray.length; i++ ) {
+            stringArray[i] = Character.toLowerCase(stringArray[i]);
+        }
+        String key =  new String(stringArray);
+
+        if (ranksMap.containsKey(key)) {
+            NameSurferEntry value = ranksMap.get(key);
+            return value;
+        } else {
+         	return null;
+        }
 	}
+
+
+
 }
 

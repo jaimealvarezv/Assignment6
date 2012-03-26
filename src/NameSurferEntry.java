@@ -16,9 +16,8 @@ public class NameSurferEntry implements NameSurferConstants {
     private String personName = "";
     private int[] popularityRanks = new int [NDECADES];
 
-/* Constructor: NameSurferEntry(line) */
-
-    /**
+    /** Constructor: NameSurferEntry(line) */
+    /*
      * Creates a new NameSurferEntry from a data line as it appears
      * in the data file.  Each line begins with the name, which is
      * followed by integers giving the rank of that name for each
@@ -27,22 +26,25 @@ public class NameSurferEntry implements NameSurferConstants {
 
     public NameSurferEntry(String line) {
 
+        // Get the person's name
         personName = line.substring(0, line.indexOf(" "));
+
+        // Get the ranks string and convert it to un array of integers
         String ranks = line.substring(line.indexOf(" ") + 1, line.length());
         StringTokenizer tokenizer = new StringTokenizer(ranks, " ");
+
         int i = 0;
         while (tokenizer.hasMoreTokens()) {
             String token = tokenizer.nextToken(); // Get next Token
-            int rank = Integer.parseInt(token);   // Convert to Integer
+            int rank = Integer.parseInt(token);   // Convert the item to Integer
             popularityRanks[i++] = rank;          // Fill the array with the correct values
         }
 
     }
 
 
-/* Method: getName() */
-
-    /**
+    /** Method: getName() */
+    /*
      * Returns the name associated with this entry.
      */
     public String getName() {
@@ -50,9 +52,9 @@ public class NameSurferEntry implements NameSurferConstants {
         return personName;
     }
 
-/* Method: getRank(decade) */
 
-    /**
+    /** Method: getRank(decade) */
+    /*
      * Returns the rank associated with an entry for a particular
      * decade.  The decade value is an integer indicating how many
      * decades have passed since the first year in the database,
@@ -63,9 +65,8 @@ public class NameSurferEntry implements NameSurferConstants {
         return popularityRanks[decade];
     }
 
-/* Method: toString() */
-
-    /**
+    /** Method: toString() */
+    /*
      * Returns a string that makes it easy to see the value of a
      * NameSurferEntry.
      */
@@ -78,7 +79,7 @@ public class NameSurferEntry implements NameSurferConstants {
             // Concatenate the rank values into a variable
             entry +=  popularityRanks[i];
 
-            // Add a trailer space to the string
+            // Add a trailer space to the string if is not the last item
             entry += (i < popularityRanks.length - 1)? " ": "";
         }
 

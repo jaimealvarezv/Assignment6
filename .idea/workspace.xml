@@ -6,6 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="0c362e18-18a7-4546-8e44-be16fadf8850" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/NameSurfer.java" afterPath="$PROJECT_DIR$/src/NameSurfer.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/NameSurferDataBase.java" afterPath="$PROJECT_DIR$/src/NameSurferDataBase.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/NameSurferEntry.java" afterPath="$PROJECT_DIR$/src/NameSurferEntry.java" />
     </list>
     <ignored path="Assigment6.iws" />
@@ -67,7 +69,7 @@
       <file leaf-file-name="NameSurfer.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/NameSurfer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="68" column="38" selection-start="1901" selection-end="1901" vertical-scroll-proportion="0.0">
+            <state line="65" column="34" selection-start="1745" selection-end="1745" vertical-scroll-proportion="0.0">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -75,12 +77,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="NameSurferEntry.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="NameSurferGraph.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/NameSurferGraph.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="33" column="24" selection-start="815" selection-end="815" vertical-scroll-proportion="0.7027027">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="NameSurferEntry.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/NameSurferEntry.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="82" column="77" selection-start="2416" selection-end="2416" vertical-scroll-proportion="1.1806332">
+            <state line="30" column="47" selection-start="888" selection-end="888" vertical-scroll-proportion="0.0">
               <folding>
-                <element signature="e#0#2458#0" expanded="true" />
+                <element signature="e#0#2610#0" expanded="true" />
                 <element signature="imports" expanded="true" />
               </folding>
             </state>
@@ -90,19 +101,19 @@
       <file leaf-file-name="NameSurferDataBase.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/NameSurferDataBase.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="20" column="48" selection-start="571" selection-end="571" vertical-scroll-proportion="0.0">
+            <state line="74" column="71" selection-start="2318" selection-end="2318" vertical-scroll-proportion="0.0">
               <folding>
-                <element signature="e#0#1868#0" expanded="true" />
                 <element signature="imports" expanded="true" />
+                <element signature="e#623#648#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="NameSurferConstants.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/NameSurferConstants.java">
+      <file leaf-file-name="names-data.txt" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/names-data.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="23" column="36" selection-start="745" selection-end="753" vertical-scroll-proportion="0.0">
+            <state line="2552" column="7" selection-start="96787" selection-end="96794" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -123,17 +134,17 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/src/NameSurferDataBase.java" />
-        <option value="$PROJECT_DIR$/src/NameSurfer.java" />
         <option value="$PROJECT_DIR$/src/NameSurferEntry.java" />
+        <option value="$PROJECT_DIR$/src/NameSurfer.java" />
+        <option value="$PROJECT_DIR$/src/NameSurferDataBase.java" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="105" />
-    <option name="y" value="38" />
-    <option name="width" value="1626" />
-    <option name="height" value="960" />
+    <option name="x" value="118" />
+    <option name="y" value="37" />
+    <option name="width" value="1635" />
+    <option name="height" value="911" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <OptionsSetting value="true" id="Add" />
@@ -163,7 +174,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -203,6 +213,7 @@
         </subPane>
       </pane>
       <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -220,9 +231,9 @@
     <property name="FullScreen" value="false" />
     <property name="MemberChooser.showClasses" value="true" />
     <property name="GoToClass.includeLibraries" value="false" />
-    <property name="dynamic.classpath" value="false" />
-    <property name="options.searchVisible" value="true" />
     <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="options.searchVisible" value="true" />
+    <property name="dynamic.classpath" value="false" />
   </component>
   <component name="RunManager" selected="Application.NameSurfer">
     <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin">
@@ -256,24 +267,6 @@
         <option name="Maven.BeforeRunTask" enabled="false" />
       </method>
     </configuration>
-    <configuration default="true" type="Applet" factoryName="Applet">
-      <module name="" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="HTML_FILE_NAME" />
-      <option name="HTML_USED" value="false" />
-      <option name="WIDTH" value="400" />
-      <option name="HEIGHT" value="300" />
-      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
-      <option name="VM_PARAMETERS" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <method>
-        <option name="AntTarget" enabled="false" />
-        <option name="BuildArtifacts" enabled="false" />
-        <option name="Make" enabled="true" />
-        <option name="Maven.BeforeRunTask" enabled="false" />
-      </method>
-    </configuration>
     <configuration default="true" type="TestNG" factoryName="TestNG">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <module name="" />
@@ -300,6 +293,24 @@
       <envs />
       <properties />
       <listeners />
+      <method>
+        <option name="AntTarget" enabled="false" />
+        <option name="BuildArtifacts" enabled="false" />
+        <option name="Make" enabled="true" />
+        <option name="Maven.BeforeRunTask" enabled="false" />
+      </method>
+    </configuration>
+    <configuration default="true" type="Applet" factoryName="Applet">
+      <module name="" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="HTML_FILE_NAME" />
+      <option name="HTML_USED" value="false" />
+      <option name="WIDTH" value="400" />
+      <option name="HEIGHT" value="300" />
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <option name="VM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
       <method>
         <option name="AntTarget" enabled="false" />
         <option name="BuildArtifacts" enabled="false" />
@@ -412,31 +423,31 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="105" y="38" width="1626" height="960" extended-state="0" />
+    <frame x="118" y="37" width="1635" height="911" extended-state="0" />
     <editor active="false" />
     <layout>
       <window_info id="Data Sources" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Changes" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32936978" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.35858586" sideWeight="0.9993703" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39952436" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.5184304" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.5138539" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32936978" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32828283" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32953104" sideWeight="0.6706302" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39952436" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32936978" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32703215" sideWeight="0.64141417" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32828283" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39952436" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="VcsContentAnnotationSettings">
@@ -473,7 +484,7 @@
     <option name="INCLUDE_TEXT_INTO_SHELF" value="false" />
     <option name="CREATE_PATCH_EXPAND_DETAILS_DEFAULT" value="true" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="-NameSurfer UI Created&#10;-NameSurferEntry Created&#10;-NameSurferDatabase Started" />
+    <option name="LAST_COMMIT_MESSAGE" value="-NameSurferEntry tostring() function modified to avoid an extra blank space al the end of the last rank" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="true" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -487,6 +498,7 @@
     <option name="SHOW_FILE_HISTORY_AS_TREE" value="false" />
     <option name="FILE_HISTORY_SPLITTER_PROPORTION" value="0.6" />
     <MESSAGE value="-NameSurfer UI Created&#10;-NameSurferEntry Created&#10;-NameSurferDatabase Started" />
+    <MESSAGE value="-NameSurferEntry tostring() function modified to avoid an extra blank space al the end of the last rank" />
   </component>
   <component name="VssConfiguration">
     <option name="CLIENT_PATH" value="" />
@@ -530,23 +542,35 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/NameSurferGraph.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="13" selection-start="375" selection-end="375" vertical-scroll-proportion="0.07371008" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/NameSurferConstants.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="36" selection-start="745" selection-end="753" vertical-scroll-proportion="0.0">
+        <state line="23" column="36" selection-start="745" selection-end="753" vertical-scroll-proportion="0.33333334">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/names-data.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2552" column="7" selection-start="96787" selection-end="96794" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/NameSurferDataBase.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="48" selection-start="571" selection-end="571" vertical-scroll-proportion="0.0">
+        <state line="74" column="71" selection-start="2318" selection-end="2318" vertical-scroll-proportion="0.0">
           <folding>
-            <element signature="e#0#1868#0" expanded="true" />
+            <element signature="imports" expanded="true" />
+            <element signature="e#623#648#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/NameSurferEntry.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="30" column="47" selection-start="888" selection-end="888" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="e#0#2610#0" expanded="true" />
             <element signature="imports" expanded="true" />
           </folding>
         </state>
@@ -554,20 +578,17 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/NameSurfer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="68" column="38" selection-start="1901" selection-end="1901" vertical-scroll-proportion="0.0">
+        <state line="65" column="34" selection-start="1745" selection-end="1745" vertical-scroll-proportion="0.0">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/NameSurferEntry.java">
+    <entry file="file://$PROJECT_DIR$/src/NameSurferGraph.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="82" column="77" selection-start="2416" selection-end="2416" vertical-scroll-proportion="1.1806332">
-          <folding>
-            <element signature="e#0#2458#0" expanded="true" />
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state line="33" column="24" selection-start="815" selection-end="815" vertical-scroll-proportion="0.7027027">
+          <folding />
         </state>
       </provider>
     </entry>

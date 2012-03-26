@@ -9,6 +9,7 @@ import acm.program.*;
 import java.awt.event.*;
 import javax.swing.*;
 
+
 public class NameSurfer extends Program implements NameSurferConstants {
 
     
@@ -57,13 +58,15 @@ public class NameSurfer extends Program implements NameSurferConstants {
 		if (e.getActionCommand().equals("Clear") ) {
             String msg = "Clear\n"+"Name: "+name.getText();
             JOptionPane.showMessageDialog(rootPane, msg , "Information", JOptionPane.INFORMATION_MESSAGE);
+
         }  else if (e.getActionCommand().equals("Graph") ) {
             
-            String line = "Sam 58 69 99 131 168 236 278 380 467 408 466";
-            NameSurferEntry ns = new NameSurferEntry(line);
+            //String line = "Sam 58 69 0 131 168 236 278 380 467 408 466";
+            //NameSurferEntry ns = new NameSurferEntry(line);
 
-            String msg =  ns.toString();
 
+            NameSurferEntry ns =  new NameSurferDataBase("src/names-data.txt").findEntry(name.getText());
+            String msg = ns.toString();
             JOptionPane.showMessageDialog(rootPane, msg, "Information", JOptionPane.INFORMATION_MESSAGE);
         }
 	}
