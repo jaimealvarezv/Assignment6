@@ -14,9 +14,16 @@ public class NameSurfer extends Program implements NameSurferConstants {
 
     
     private JLabel labelName;
+
     private JTextField name;
     private JButton buttonGraph;
     private JButton buttonClear;
+    private JComboBox chartedNames;
+
+    private NameSurferGraph graph = new NameSurferGraph();
+    private NameSurferDataBase database =  new NameSurferDataBase("src/names-data.txt");
+
+
     
 
 /** Method: init()  */
@@ -32,18 +39,55 @@ public class NameSurfer extends Program implements NameSurferConstants {
         labelName = new JLabel("Name:");
         add(labelName, SOUTH);
 
+        // Adds the Input Text Box
         name = new JTextField(25);
         add(name, SOUTH);
 
+        // Adds the Button Graph
         buttonGraph = new JButton("Graph");
         add(buttonGraph, SOUTH);
 
+        // Adds the ComboBox to delete graphs
+        chartedNames = new JComboBox();
+        chartedNames.addItem("-- Clear Graph by Name --");
+        chartedNames.setEditable(false);
+
+        // Add the actions listener for the comboBox
+        chartedNames.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent e) {
+                deleteGraph();
+            }
+        });
+        add(chartedNames, SOUTH);
+
+        // Adds The Clear Button
         buttonClear = new JButton("Clear");
         add(buttonClear, SOUTH);
 
+
+        // Adds the Canvas Object
+        add(graph);
+
+        // Add other action Listeners
         addActionListeners();
         
 	}
+
+    /**  deleteGraph()
+     *
+     * Delete the selected graph from canvas.
+     */
+
+    private void deleteGraph() {
+
+        if (chartedNames.getSelectedIndex()!= 0 ) {
+            int selectedItem = chartedNames.getSelectedIndex();
+            graph.deleteName((String) chartedNames.getSelectedItem());
+            chartedNames.removeItemAt(selectedItem);
+        }
+
+
+    }
 
 
 /** Method: actionPerformed(e) */
@@ -54,23 +98,48 @@ public class NameSurfer extends Program implements NameSurferConstants {
  */
 	public void actionPerformed(ActionEvent e) {
 
-
-		if (e.getActionCommand().equals("Clear") ) {
-            String msg = "Clear\n"+"Name: "+name.getText();
-            JOptionPane.showMessageDialog(rootPane, msg , "Information", JOptionPane.INFORMATION_MESSAGE);
+        if (e.getActionCommand().equals("Clear") ) {
+            // Clear all the graphs
+            graph.clear();
 
         }  else if (e.getActionCommand().equals("Graph") ) {
-            
-            //String line = "Sam 58 69 0 131 168 236 278 380 467 408 466";
-            //NameSurferEntry ns = new NameSurferEntry(line);
 
+            NameSurferEntry ns =  database.findEntry(name.getText());
 
-            NameSurferEntry ns =  new NameSurferDataBase("src/names-data.txt").findEntry(name.getText());
-            String msg = ns.toString();
-            JOptionPane.showMessageDialog(rootPane, msg, "Information", JOptionPane.INFORMATION_MESSAGE);
+            if (ns == null) {
+                JOptionPane.showMessageDialog(rootPane, "[" + name.getText()+ "] doesn't exist in database! ", "Error", JOptionPane.ERROR_MESSAGE);
+            } else {
+
+                // Checks if the name exists in the ComboBox else add it.
+                if (!nameExists(ns.getName(), chartedNames)) {
+                    chartedNames.addItem(ns.getName());
+                }
+                // Adds the Entry to list and update the graph.
+                graph.addEntry(ns);
+                graph.update();
+            }
         }
 	}
 
+    /** TODO: Create a new LocalUtils Class to add this function
+     * Check if a string exists into ComboBox
+     * @param str The string to find
+     * @param comboBox The combobox to find into
+     * @return true if str exists into combobox else false.
+     */
+
+    private boolean nameExists(String str, JComboBox comboBox) {
+
+        boolean exists = false;
+
+        for (int index = 0; index < comboBox.getItemCount() && !exists; index++) {
+            if ( str.equals(comboBox.getItemAt(index)) ){
+                exists = true;
+            }
+        }
+        return exists;
+
+    }
 
     public static void main(String[] args) {
         new NameSurfer().start(args);
